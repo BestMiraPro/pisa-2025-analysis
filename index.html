@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Screens, AI Confidence and Student Achievement: What PISA 2025 Can - and Cannot - Tell Us</title>
+<meta name="description" content="An independent, reproducible analysis of weekday social-network time, self-rated AI confidence and science achievement in the PISA 2025 public-use file, fitted within countries and combined across independent designs.">
+<meta name="author" content="Dinis Mira">
+<link rel="canonical" href="https://bestmirapro.github.io/pisa-2025-analysis/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Screens, AI Confidence and Student Achievement: What PISA 2025 Can - and Cannot - Tell Us">
+<meta property="og:description" content="An independent, reproducible analysis of weekday social-network time, self-rated AI confidence and science achievement in the PISA 2025 public-use file, fitted within countries and combined across independent designs.">
+<meta property="og:url" content="https://bestmirapro.github.io/pisa-2025-analysis/index.html">
+<meta property="og:image" content="https://bestmirapro.github.io/pisa-2025-analysis/assets/social-preview.png">
+<meta property="og:image:alt" content="Two headline findings: the over-seven-hours social-use contrast and the AI-confidence coefficient under nested models.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Screens, AI Confidence and Student Achievement: What PISA 2025 Can - and Cannot - Tell Us">
+<meta name="twitter:description" content="An independent, reproducible analysis of weekday social-network time, self-rated AI confidence and science achievement in the PISA 2025 public-use file, fitted within countries and combined across independent designs.">
+<meta name="twitter:image" content="https://bestmirapro.github.io/pisa-2025-analysis/assets/social-preview.png">
+<style>
+:root{color-scheme:light;--surface:#fcfcfb;--surface-2:#f4f3ee;--ink:#0b0b0b;
+--ink-soft:#52514e;--rule:#dedcd4;--accent:#2a78d6;--max:44rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
+--surface:#1a1a19;--surface-2:#242422;--ink:#ffffff;--ink-soft:#c3c2b7;--rule:#3a3a37;
+--accent:#3987e5}}
+:root[data-theme="dark"]{color-scheme:dark;--surface:#1a1a19;--surface-2:#242422;
+--ink:#ffffff;--ink-soft:#c3c2b7;--rule:#3a3a37;--accent:#3987e5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface);color:var(--ink);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-text-size-adjust:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:2.5rem 16px 5rem}
+header.site{border-bottom:1px solid var(--rule);margin-bottom:2rem;padding-bottom:1.25rem}
+nav a{color:var(--accent);text-decoration:none;margin-right:1.1rem;font-size:.92rem}
+nav a:hover,a:hover{text-decoration:underline}
+h1{font-size:1.85rem;line-height:1.25;margin:.4rem 0 .6rem;letter-spacing:-.01em}
+h2{font-size:1.28rem;margin:2.4rem 0 .7rem;line-height:1.3}
+h3{font-size:1.06rem;margin:1.8rem 0 .5rem}
+p{margin:0 0 1.05rem}
+a{color:var(--accent);overflow-wrap:anywhere}
+.meta{color:var(--ink-soft);font-size:.9rem;margin:0 0 .3rem}
+.lede{font-size:1.08rem;color:var(--ink-soft)}
+figure{margin:2rem 0;padding:0}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--rule);
+border-radius:8px;background:#fcfcfb}
+figcaption{color:var(--ink-soft);font-size:.87rem;margin-top:.6rem;line-height:1.5}
+a.download{white-space:nowrap}
+.table-scroll{overflow-x:auto;margin:1.4rem 0;border:1px solid var(--rule);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{padding:.5rem .7rem;text-align:left;border-bottom:1px solid var(--rule);
+vertical-align:top}
+th{background:var(--surface-2);font-weight:600;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+blockquote{margin:1.4rem 0;padding:.6rem 0 .6rem 1rem;border-left:3px solid var(--rule);
+color:var(--ink-soft)}
+code{background:var(--surface-2);padding:.12em .35em;border-radius:4px;font-size:.88em}
+hr{border:none;border-top:1px solid var(--rule);margin:2.5rem 0}
+ul,ol{margin:0 0 1.05rem;padding-left:1.3rem}
+li{margin-bottom:.35rem}
+footer.site{margin-top:3.5rem;padding-top:1.4rem;border-top:1px solid var(--rule);
+color:var(--ink-soft);font-size:.88rem}
+@media print{body{background:#fff;color:#000}nav,a.download{display:none}
+figure img{border:1px solid #ccc}.wrap{max-width:none;padding:0}
+a{color:#000;text-decoration:none}a[href^="http"]::after{content:" (" attr(href) ")";
+font-size:.8em;color:#444}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site"><nav><a href="index.html" aria-current="page">Article</a><a href="methods.html">Methods and appendix</a><a href="downloads/">Data</a></nav></header>
+<main>
+<h1 id="screens-ai-confidence-and-student-achievement-what-pisa-2025-can-and-cannot-tell-us">Screens, AI Confidence and Student Achievement: What PISA 2025 Can — and Cannot — Tell Us</h1>
+<p>Students who report spending more than seven hours a day browsing social networks on a typical weekday score 59 points (95% CI 56 to 62) below students reporting one to three hours, comparing students within the same education system and adjusting for family background. Comparing students within the same <em>school</em>, that difference falls to 37 points (95% CI 35 to 40). Self-rated confidence at judging AI chatbot output looks like a large achievement advantage — 24.7 points (95% CI 22.0 to 27.4) — that shrinks to 7.8 points (95% CI 5.3 to 10.3) once family background enters the model and settles at 10.2 points (95% CI 7.2 to 13.2) when general digital confidence and the non-AI twin item enter too. None of this is an effect of screens or of AI. It is what a single cross-sectional survey can and cannot show.</p>
+<h2 id="what-this-is-and-what-it-is-not">What this is, and what it is not</h2>
+<p>This is an independent analysis of the PISA 2025 public-use file. It is not peer reviewed, and it is not an OECD publication. Everything here is an association measured at one moment in time. No design in this data can tell you whether social media harms learning, whether struggling students retreat into their phones, or whether some third thing produces both. Where a result is compatible with several stories, this article says so rather than picking the most quotable one.</p>
+<p>Three questions:</p>
+<ol><li>How does weekday social-network time relate to science achievement inside a country,</li></ol>
+<p>and how much of that relation is family background?</p>
+<ol><li>How much of it survives when students are compared with classmates at the same</li></ol>
+<p>school, rather than with students across the system?</p>
+<ol><li>Does self-rated confidence at judging AI chatbot output measure something specific to</li></ol>
+<p>AI, or general self-assessment?</p>
+<h2 id="the-data-and-who-is-actually-in-it">The data, and who is actually in it</h2>
+<p>PISA 2025 was released on 8 September 2026. The public-use student file holds 755,721 records across 90 education systems; <em>PISA 2025 Results (Volume I)</em> reports 91 countries and economies. That difference is stated here as an observed fact — this analysis did not establish its cause and does not invent one.</p>
+<p>The full-file count is not the denominator for anything below. The social-network item sits in the ICT familiarity questionnaire, an instrument many systems did not administer and some administered to only part of their sample. The screen-time analysis therefore covers 146,738 students in 24 OECD systems. The AI items are narrower still: 36,015 students in 8 OECD systems. Every figure in this article carries its own sample and country set, and every table in the data package does too.</p>
+<p>Coverage inside that set is uneven in ways worth stating plainly. Weighted valid response on the social-network item runs from 6.1% of released records in the United Kingdom to 96.2% in Korea. OECD separately warns that more than 40% of responding students in the United States were not administered the student questionnaire at all. Both facts are handled by sensitivity analyses below rather than by a footnote.</p>
+<p>One limitation is structural. The public-use file collapses every non-substantive response — not administered, valid skip, invalid, no answer — into a single system-missing code. The value labels document five distinct categories; the released data carries none of them. It is therefore <strong>not possible in this file</strong> to separate a module a student was never given from a question a student declined to answer. Nothing here treats an absent module as a zero, and no country is described as not having administered an item.</p>
+<h2 id="screen-time-and-science">Screen time and science</h2>
+<p>The estimand throughout is the equal-weight average of estimates computed separately inside each participating system — the same construction OECD uses for its own averages. Uncertainty combines Fay replicate sampling variance with plausible-value imputation variance, formed within each country first and then combined across countries as independent designs. Intervals are approximate 95% intervals and describe sampling and imputation uncertainty for the systems included, not a random draw from some universe of countries.</p>
+<figure><img src="assets/figure-1-screen-curve.png" alt="Science score difference against the one-to-three-hour group, for each weekday social-network time band, shown twice: as a raw difference and after adjusting for economic, social and cultural status and immigrant status. The raw curve falls from roughly minus fourteen points for no use at all to minus seventy-four points for more than seven hours. The adjusted curve is shallower throughout, reaching about minus fifty-nine points." loading="lazy"><figcaption><strong>Figure 1.</strong> Both models are fitted on identical records inside each of the contributing systems. The one-to-three-hour band is the reference, so its contrast is zero by construction. <a class="download" href="assets/figure-1-screen-curve.png" download>Download image</a></figcaption></figure>
+<p>The raw difference between the heaviest-use band and the reference is 74 points (95% CI 72 to 77). Adjusting for economic, social and cultural status and immigrant status on exactly the same students leaves 59 points (95% CI 56 to 62). The change is 15.4 points (95% CI 14.2 to 16.6) — a paired difference computed inside the joint draws, so it carries its own uncertainty rather than being inferred from two separate standard errors.</p>
+<p>Two features of the curve resist the simple reading. It is not monotonic: students reporting <em>no</em> social-network time at all also score below the one-to-three-hour group, by 8.1 points (95% CI 4.6 to 11.5). And the band just below the reference is flat — -0.1 points (95% CI -2.1 to 2.0), an interval that includes zero. There is no threshold in these data, no safe number of hours, and nothing that identifies a tipping point. The gradient is steepest at the top of the range: 42 points (95% CI 40 to 44) at five to seven hours against 59 points (95% CI 56 to 62) above seven.</p>
+<h3 id="the-same-result-in-every-system">The same result in every system</h3>
+<figure><img src="assets/figure-2-country-forest.png" alt="Forest plot of the adjusted over-seven-hours contrast for each contributing OECD system, each with its own ninety-five percent interval, sorted from most to least negative. Every system&#x27;s point estimate is negative and every interval excludes zero. The equal-weight average is marked with a dashed line." loading="lazy"><figcaption><strong>Figure 2.</strong> Every contributing system is shown. Country estimates are noisier than the average because each rests on one national sample. <a class="download" href="assets/figure-2-country-forest.png" download>Download image</a></figcaption></figure>
+<p>The direction is not carried by a few systems. All 24 OECD systems have a negative adjusted point estimate, and in all of them the individual interval excludes zero. The size varies substantially — the median is about 61 points, running from roughly 84 points in Germany to 24 in Israel. Leaving out any single system moves the average between about −58 and −61.</p>
+<p>The sensitivities behave the same way. Excluding systems that carry an applicable official PISA 2025 sampling caution gives 59 points (95% CI 56 to 61) across 21 systems. Excluding systems whose weighted coverage on the exposure item falls below 60% of released records — a threshold fixed before any coefficient was estimated — gives 61 points (95% CI 58 to 63) across 21 systems. Adding a squared ESCS term moves the contrast by less than a fifth of a point. On the subset of systems that release student gender, adding gender to the model changes the heaviest-use contrast by 0.01 points, with an interval comfortably spanning zero.</p>
+<h3 id="how-much-of-it-is-the-school">How much of it is the school?</h3>
+<p>Adjusting for ESCS and immigrant status leaves untouched everything that differs between schools: intake, peers, resources, tracking, neighbourhood. The school-valid sample — 22 systems and 139,948 students, two systems excluded because they release no school identifier — allows the same contrast to be fitted comparing only students inside the same school, with the demeaning recomputed for every replicate weight.</p>
+<figure><img src="assets/figure-5-within-school.png" alt="The adjusted contrast across the weekday time bands, plotted twice: comparing all students, and comparing only students within the same school. The within-school curve is markedly shallower, reaching about minus thirty-seven points at the heaviest band against about minus fifty-nine for the baseline." loading="lazy"><figcaption><strong>Figure 5.</strong> Baseline and school fixed-effect fits on identical records. Every contributing system supported the within-school design. <a class="download" href="assets/figure-5-within-school.png" download>Download image</a></figcaption></figure>
+<p>On that sample the baseline contrast is 59 points (95% CI 56 to 62). Comparing students in the same school it is 37 points (95% CI 35 to 40) — a paired change of 22 points (95% CI 20 to 23). That change is the part of the contrast that travels with which school a student attends; the within-school fit removes it. It is a comparison of two fitted models on identical records, not a decomposition of the association into school and student causes.</p>
+<p>This narrows the range of explanations; it does not close it. Students are not randomly assigned to schools, peer environments differ inside a school as well as between schools, and nothing here addresses the possibility that students who are struggling turn to their phones rather than the reverse. What the comparison does establish is that the association is not merely a restatement of which schools students attend.</p>
+<p>The pattern replicates in the other two domains on identical records: 54 points (95% CI 51 to 57) in reading and 59 points (95% CI 56 to 61) in mathematics. These are reported side by side because they were computed, not because their difference was tested — it was not, and no domain should be described as more affected than another on this evidence.</p>
+<h2 id="ai-confidence-ai-use-and-what-they-track">AI confidence, AI use, and what they track</h2>
+<p>PISA 2025 asked students how well they can "assess the quality of information generated by Artificial Intelligence chatbots". The response scale runs from "I cannot do this" to "I can easily do this", with a fifth option: "I don't know what this is."</p>
+<figure><img src="assets/figure-4-ai-responses.png" alt="Two panels. The left panel shows the weighted share of students choosing each of the five responses, with about a fifth saying they cannot do this and about a third saying they can easily do this. The right panel shows the mean science score of each group with its interval; scores rise across the four ability responses, and the do-not-know group sits lowest of all." loading="lazy"><figcaption><strong>Figure 4.</strong> Shares are computed with survey weights inside each system and then averaged equally across systems. Share and score are plotted separately because they are different scales. <a class="download" href="assets/figure-4-ai-responses.png" download>Download image</a></figcaption></figure>
+<p>31.6% (95% CI 31.1 to 32.2) of students say they can easily do this. 3.3% (95% CI 3.1 to 3.5) say they do not know what this is — a small group, but one the earlier version of this analysis dropped entirely, and its position is informative: it has the <em>lowest</em> mean science score of any group, 463 (95% CI 454 to 472), below even the students who say they cannot assess AI output (478 (95% CI 475 to 481)). Whatever this item measures, it is not sitting on a clean ability scale with "don't know" at one end.</p>
+<p>Now the harder question. Students who say they can assess AI output score 24.7 points (95% CI 22.0 to 27.4) above those who say they cannot.</p>
+<figure><img src="assets/figure-3-ai-nested-models.png" alt="The coefficient on self-rated AI confidence under five nested models, each fitted on identical records: raw, then adding economic social and cultural status, immigrant status, a general digital-confidence index and the non-AI twin item. The coefficient falls sharply when background enters and then partially recovers." loading="lazy"><figcaption><strong>Figure 3.</strong> All five models are fitted on the same students, so a change between them is an adjustment, never a change of sample. <a class="download" href="assets/figure-3-ai-nested-models.png" download>Download image</a></figcaption></figure>
+<p>Adding ESCS alone changes the coefficient by 16.8 points (95% CI 15.6 to 18.0), leaving 7.8 points (95% CI 5.3 to 10.3). Immigrant status adds essentially nothing. Adding a general digital-confidence index — the other eleven items in the same battery, excluding the non-AI twin — moves the coefficient <em>up</em> by 3.0 points (95% CI 1.5 to 4.6), a suppression pattern rather than the attenuation one might expect. After the non-AI twin item enters too, 10.2 points (95% CI 7.2 to 13.2) remains. Restricting to students who answered all eleven index items gives 9.8 points (95% CI 6.6 to 13.0), so this is adjustment rather than sample restriction.</p>
+<p>The honest summary: the coefficient is 24.7 points (95% CI 22.0 to 27.4) with nothing else in the model, 7.8 points (95% CI 5.3 to 10.3) after ESCS alone, and 10.2 points (95% CI 7.2 to 13.2) after every control available here. Those are comparisons between nested models, and the changes they trace are adjustments — the models establish conditional associations, not how much of the gap family background or confidence causes. Whether the residual reflects anything specific to AI is not something this design can settle — the index is exploratory, not a validated scale, and none of these percentages is a causal decomposition.</p>
+<p>What self-rated confidence clearly does track is background. 49% (95% CI 47 to 50) of students in the lowest ESCS quartile say they can assess AI output, against 77% (95% CI 76 to 78) in the highest — a gap of 28 percentage points (95% CI 27 to 30). ESCS is economic, social and cultural status, not household income, and these are quartiles of that index within each country. This is a gap in what students say about themselves. It is not a measured skill gap, and it should not be quoted as one.</p>
+<h3 id="does-using-chatbots-help-the-confident-more">Does using chatbots help the confident more?</h3>
+<p>A natural worry is that AI tools amplify existing advantage: that frequent use pays off for students who can already judge the output and not for those who cannot. The data allow a direct test. Among students answering both items, the interaction between weekly chatbot use for learning and self-rated confidence is -2.4 points (95% CI -7.5 to 2.7), and -1.5 points (95% CI -6.2 to 3.2) after background adjustment.</p>
+<p>Both intervals include zero. There is <strong>no clear evidence of a difference in this sample</strong> — which is not the same as evidence that no difference exists, and the sample is small enough that a real interaction of moderate size would not reliably show up. The main effect is also modest: weekly use is associated with 8.7 points (95% CI 4.3 to 13.1) among lower-confidence students. That is an association between two things students reported about themselves. It is not points gained from using a chatbot.</p>
+<h2 id="related-work-and-what-is-new-here">Related work, and what is new here</h2>
+<p>That digital leisure time correlates negatively with achievement is well established; OECD's own <em>Finite Time to Learn and Play</em> covers the broader leisure question. The contribution here is narrower and more specific. The exposure is one item about weekday social-network browsing, not screen time in general or device ownership. Every estimate is computed inside a country and combined across independent designs, so nothing rests on pooling students across systems with different populations. The adjusted and unadjusted models share identical records. The within-school comparison separates school composition from within-school variation. And the AI section separates <em>using</em> chatbots from <em>feeling able to judge</em> them, which are routinely conflated.</p>
+<h2 id="what-would-change-the-conclusions">What would change the conclusions</h2>
+<ul><li><strong>Reverse direction.</strong> Students who are struggling may browse more. Nothing here distinguishes that from the opposite, and it is at least as plausible.</li><li><strong>Residual confounding.</strong> ESCS and immigrant status are two variables. The within-school comparison removes school-level confounders, not student-level ones.</li><li><strong>Measurement.</strong> Both exposures are self-reported time and self-rated ability. Both are known to be reported with error, and that error may itself correlate with achievement.</li><li><strong>Selection into the module.</strong> The ICT and AI instruments were not administered to everyone, and this file does not let nonadministration be separated from nonresponse. Who is missing is not established here.</li><li><strong>Multiplicity.</strong> This is an exploratory analysis with a specification frozen before estimation but after the data were inspected for coverage. It is not a preregistration, and the intervals are not corrected for the number of contrasts examined.</li><li><strong>Small country sets.</strong> The AI results rest on 8 OECD systems. They describe those systems, and they are not an OECD-wide finding.</li></ul>
+<h2 id="methods-and-data">Methods and data</h2>
+<p>The full analysis inventory, sample definitions, inference, coverage tables and the complete list of sensitivities are in the <a href="methods.html">methods and appendix</a>. Every aggregate table behind every number above is in the <a href="downloads/">data downloads</a>, including the claim ledger that maps each statement in this article to the generated result row it came from.</p>
+<p>PISA microdata is not redistributed here. It is available from the OECD's <a href="https://www.oecd.org/en/data/datasets/pisa-2025-database.html">PISA 2025 Database</a>, which also publishes the questionnaires, the codebook and the recoding syntax for Volume I variables.</p>
+<h3 id="references">References</h3>
+<ul><li>OECD (2026), <em>PISA 2025 Results (Volume I): Future-Ready Students</em>. Reader's Guide, reporting approach and international averages. <a href="https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html">https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html</a></li><li>OECD, <em>PISA 2025 Database</em> — public-use files, questionnaires, codebook and compendia. <a href="https://www.oecd.org/en/data/datasets/pisa-2025-database.html">https://www.oecd.org/en/data/datasets/pisa-2025-database.html</a></li><li>OECD, <em>How to prepare and analyse the PISA database</em>. <a href="https://www.oecd.org/en/about/programmes/pisa/how-to-prepare-and-analyse-the-pisa-database.html">https://www.oecd.org/en/about/programmes/pisa/how-to-prepare-and-analyse-the-pisa-database.html</a></li><li>OECD, <em>Finite Time to Learn and Play</em> — the broader digital-leisure analysis. <a href="https://www.oecd.org/en/publications/finite-time-to-learn-and-play_edbaa4bb-en/full-report.html">https://www.oecd.org/en/publications/finite-time-to-learn-and-play_edbaa4bb-en/full-report.html</a></li></ul>
+</main>
+<footer class="site">
+<p>Dinis Mira · 20 September 2026 ·
+version 1.0.0</p>
+<p>Independent observational research. Not peer reviewed, and not an OECD publication.</p>
+<p>Cite as: Mira, D. (2026). Screens, AI Confidence and Student Achievement: What PISA 2025 Can - and Cannot - Tell Us. Version 1.0.0.</p>
+</footer>
+</div>
+</body>
+</html>

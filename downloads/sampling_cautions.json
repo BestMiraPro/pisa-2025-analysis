@@ -1,0 +1,62 @@
+{
+  "source": "PISA 2025 Results (Volume I), Reader's Guide, 'Reporting approach'",
+  "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report/reader-s-guide_0364240f.html",
+  "read_on": "2026-09-20",
+  "full_reporting_with_asterisk": {
+    "countries": [
+      "Canada",
+      "Netherlands",
+      "New Zealand",
+      "Norway"
+    ],
+    "iso": [
+      "CAN",
+      "NLD",
+      "NZL",
+      "NOR"
+    ],
+    "subnational": [
+      "Alberta",
+      "British Columbia",
+      "Manitoba",
+      "Newfoundland and Labrador",
+      "Nova Scotia",
+      "Ontario",
+      "Quebec",
+      "Murcia (Spain)"
+    ]
+  },
+  "limited_reporting_with_asterisk": {
+    "countries": [
+      "Albania",
+      "United States"
+    ],
+    "iso": [
+      "ALB",
+      "USA"
+    ]
+  },
+  "limited_reporting_without_asterisk": {
+    "Uzbekistan": "Mathematics and reading response data not comparable; science and learning-in-the-digital-world data usable.",
+    "Viet Nam": "Excluded from performance trend analyses only; included in 2025 performance and all questionnaire-based analyses."
+  },
+  "national_versus_regional": {
+    "Spain": "Spain's national results can be fully included. Catalonia is not reported separately; Murcia is reported with caution. The national entity ESP therefore carries NO caution flag, and none is applied to it here.",
+    "Canada": "The national entity CAN carries the asterisk, alongside seven provinces."
+  },
+  "questionnaire_specific_warning": {
+    "USA": "More than 40% of responding students in the United States were not administered the student questionnaire. OECD presents United States questionnaire results 'below the line' but still includes them in the computation of OECD averages.",
+    "Albania": "Questionnaire results also presented 'below the line'."
+  },
+  "applied_in_this_release": {
+    "rule": "The cautioned-systems sensitivity re-estimates every principal contrast excluding OECD systems that carry an applicable official caution AND contribute to the sample in question.",
+    "flagged_oecd_systems": [
+      "CAN",
+      "NLD",
+      "NZL",
+      "NOR",
+      "USA"
+    ],
+    "note": "CAN and NOR do not contribute to any sample in this release because they did not administer the ICT familiarity or AI items; the operative exclusions are therefore NLD, NZL and USA where present."
+  }
+}

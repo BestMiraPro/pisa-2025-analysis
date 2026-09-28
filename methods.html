@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methods and appendix</title>
+<meta name="description" content="An independent, reproducible analysis of weekday social-network time, self-rated AI confidence and science achievement in the PISA 2025 public-use file, fitted within countries and combined across independent designs.">
+<meta name="author" content="Dinis Mira">
+<link rel="canonical" href="https://bestmirapro.github.io/pisa-2025-analysis/methods.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Methods and appendix">
+<meta property="og:description" content="An independent, reproducible analysis of weekday social-network time, self-rated AI confidence and science achievement in the PISA 2025 public-use file, fitted within countries and combined across independent designs.">
+<meta property="og:url" content="https://bestmirapro.github.io/pisa-2025-analysis/methods.html">
+<meta property="og:image" content="https://bestmirapro.github.io/pisa-2025-analysis/assets/social-preview.png">
+<meta property="og:image:alt" content="Two headline findings: the over-seven-hours social-use contrast and the AI-confidence coefficient under nested models.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Methods and appendix">
+<meta name="twitter:description" content="An independent, reproducible analysis of weekday social-network time, self-rated AI confidence and science achievement in the PISA 2025 public-use file, fitted within countries and combined across independent designs.">
+<meta name="twitter:image" content="https://bestmirapro.github.io/pisa-2025-analysis/assets/social-preview.png">
+<style>
+:root{color-scheme:light;--surface:#fcfcfb;--surface-2:#f4f3ee;--ink:#0b0b0b;
+--ink-soft:#52514e;--rule:#dedcd4;--accent:#2a78d6;--max:44rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
+--surface:#1a1a19;--surface-2:#242422;--ink:#ffffff;--ink-soft:#c3c2b7;--rule:#3a3a37;
+--accent:#3987e5}}
+:root[data-theme="dark"]{color-scheme:dark;--surface:#1a1a19;--surface-2:#242422;
+--ink:#ffffff;--ink-soft:#c3c2b7;--rule:#3a3a37;--accent:#3987e5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface);color:var(--ink);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-text-size-adjust:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:2.5rem 16px 5rem}
+header.site{border-bottom:1px solid var(--rule);margin-bottom:2rem;padding-bottom:1.25rem}
+nav a{color:var(--accent);text-decoration:none;margin-right:1.1rem;font-size:.92rem}
+nav a:hover,a:hover{text-decoration:underline}
+h1{font-size:1.85rem;line-height:1.25;margin:.4rem 0 .6rem;letter-spacing:-.01em}
+h2{font-size:1.28rem;margin:2.4rem 0 .7rem;line-height:1.3}
+h3{font-size:1.06rem;margin:1.8rem 0 .5rem}
+p{margin:0 0 1.05rem}
+a{color:var(--accent);overflow-wrap:anywhere}
+.meta{color:var(--ink-soft);font-size:.9rem;margin:0 0 .3rem}
+.lede{font-size:1.08rem;color:var(--ink-soft)}
+figure{margin:2rem 0;padding:0}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--rule);
+border-radius:8px;background:#fcfcfb}
+figcaption{color:var(--ink-soft);font-size:.87rem;margin-top:.6rem;line-height:1.5}
+a.download{white-space:nowrap}
+.table-scroll{overflow-x:auto;margin:1.4rem 0;border:1px solid var(--rule);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{padding:.5rem .7rem;text-align:left;border-bottom:1px solid var(--rule);
+vertical-align:top}
+th{background:var(--surface-2);font-weight:600;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+blockquote{margin:1.4rem 0;padding:.6rem 0 .6rem 1rem;border-left:3px solid var(--rule);
+color:var(--ink-soft)}
+code{background:var(--surface-2);padding:.12em .35em;border-radius:4px;font-size:.88em}
+hr{border:none;border-top:1px solid var(--rule);margin:2.5rem 0}
+ul,ol{margin:0 0 1.05rem;padding-left:1.3rem}
+li{margin-bottom:.35rem}
+footer.site{margin-top:3.5rem;padding-top:1.4rem;border-top:1px solid var(--rule);
+color:var(--ink-soft);font-size:.88rem}
+@media print{body{background:#fff;color:#000}nav,a.download{display:none}
+figure img{border:1px solid #ccc}.wrap{max-width:none;padding:0}
+a{color:#000;text-decoration:none}a[href^="http"]::after{content:" (" attr(href) ")";
+font-size:.8em;color:#444}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site"><nav><a href="index.html">Article</a><a href="methods.html" aria-current="page">Methods and appendix</a><a href="downloads/">Data</a></nav></header>
+<main>
+<h1 id="methods-and-appendix">Methods and appendix</h1>
+<p>This is the inventory of what actually ran. Every table named here is in the <a href="downloads/">data downloads</a>, and every number in the <a href="index.html">article</a> resolves to a row in one of them through <code>claims.json</code>.</p>
+<h2 id="source-and-identity">Source and identity</h2>
+<div class="table-scroll"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>File</td><td><code>CY09_MS_STU_PUF.sav</code> (PISA 2025 public-use student questionnaire file)</td></tr><tr><td>SHA-256</td><td><code>6f6fa1e1ecce23d39183d44ec82ba05b245fe88a2416c8d8dc1b016d556fc379</code></td></tr><tr><td>Size</td><td>2,168,666,883 bytes</td></tr><tr><td>Recorded creation time inside the file</td><td>2026-08-18 16:26:26</td></tr><tr><td>Records / columns</td><td>755,721 / 885</td></tr><tr><td>Plausible values</td><td>10 each for science, reading and mathematics — counted, not assumed</td></tr><tr><td>Replicate weights</td><td>80 <code>W_FSTURWT</code> columns, plus <code>W_FSTUWT</code></td></tr><tr><td>Retrieval URL and date</td><td><strong>unknown</strong></td></tr></tbody></table></div>
+<p>The retrieval date could not be recovered. Filesystem modification time is not a download date and has not been recorded as one.</p>
+<p>The cycle was verified against the OECD website rather than against this project's own earlier claims. The PISA 2025 Database page publishes public-use files, the codebook <code>PISA2025_Codebook.xlsx</code> and the Volume I recoding syntax <code>PISA_recoding_2025.zip</code>; both of those filenames are present alongside the microdata used here. <em>PISA 2025 Results (Volume I)</em> is dated 8 September 2026 and reports 91 countries and economies. The public-use file itself is distributed behind an OECD registration form, so a byte-level comparison against the OECD-hosted copy was not possible; that residual risk is recorded in <code>cycle_verification.json</code>.</p>
+<h2 id="missing-data-and-what-this-file-cannot-distinguish">Missing data, and what this file cannot distinguish</h2>
+<p>The SAV declares no user-missing ranges, and the documented special codes never appear in the released data. <code>IC177Q02JA</code> contains only 1–6; <code>ST438Q04DA</code> only 1–5; <code>PA205Q13DA</code> only 1–5; <code>ST324Q11JA</code> only 1–4; <code>ESCS</code> contains no value with absolute magnitude at or above 10. Every non-substantive response has been collapsed to system missing.</p>
+<p>Consequence: <strong>not administered, valid skip, invalid and no response cannot be separated in this file.</strong> <code>coverage.csv</code> reports observed valid counts and weighted shares against a named denominator — all released records for that country — and reports zero for each special code, because zero is what is there. No country is described as not having administered an item, and no absent module is converted to a zero anywhere in the pipeline.</p>
+<h2 id="variables">Variables</h2>
+<p>Item wording was read from the file's own metadata, not from memory. See <code>variable_dictionary.csv</code> for all 137 retained columns with item text, storage type, valid codes and missing-code definitions.</p>
+<div class="table-scroll"><table><thead><tr><th>Role</th><th>Variable</th><th>Scale</th></tr></thead><tbody><tr><td>Exposure: screens</td><td><code>IC177Q02JA</code></td><td>1 no time · 2 under 1 h · <strong>3 1–3 h (reference)</strong> · 4 over 3 up to 5 h · 5 over 5 up to 7 h · 6 over 7 h</td></tr><tr><td>Exposure: chatbot use</td><td><code>ST438Q04DA</code></td><td>1 never · 2 once–twice a year · 3 once–twice a month · 4 once–twice a week · 5 daily. <strong>Weekly = 4–5</strong></td></tr><tr><td>AI confidence</td><td><code>PA205Q13DA</code></td><td>1 cannot · 2 struggle alone · 3 with effort · 4 easily · <strong>5 "I don't know what this is"</strong></td></tr><tr><td>Non-AI twin</td><td><code>PA205Q02DA</code></td><td>same 1–5 scale, "assess the quality of information you find online"</td></tr><tr><td>General index</td><td><code>PA205Q01,03–12DA</code></td><td>eleven items, mean of valid 1–4 responses</td></tr><tr><td>Background</td><td><code>ESCS</code>, <code>IMMIG</code>, <code>ST004D01T</code></td><td>continuous index; three-category immigration status; gender from sampling data</td></tr></tbody></table></div>
+<p>All six exposure categories are kept as categories. They are never replaced by hour midpoints, and "less than weekly" chatbot use is not non-use.</p>
+<p>The general digital-confidence index excludes <code>PA205Q02DA</code> because that item is separately controlled and must not sit on both sides of the comparison. It requires at least eight of the eleven items and is left unstandardised. Response 5 is not a point on the 1–4 ability scale and is not treated as one.</p>
+<h2 id="samples">Samples</h2>
+<p>Adjusted and unadjusted models are fitted on identical records, so an adjustment effect can never be a change of sample. Full per-country, per-step counts are in <code>sample_flow.csv</code>; <code>selection_comparison.csv</code> compares module respondents with the filtered analytic sample inside the country set the analysis actually uses, weighting within each country on the student final weight and averaging the country statistics equally across the fixed set.</p>
+<div class="table-scroll"><table><thead><tr><th>sample_id</th><th>Selection</th><th>n</th><th>systems</th></tr></thead><tbody><tr><td><code>screens_main</code></td><td>OECD · valid weights · valid exposure · all 10 science PVs · valid ESCS · valid immigrant status</td><td>146,738</td><td>24</td></tr><tr><td><code>screens_gender</code></td><td><code>screens_main</code> + gender released and valid</td><td>84,364</td><td>16</td></tr><tr><td><code>screens_school</code></td><td><code>screens_main</code> + school identifier present</td><td>139,948</td><td>22</td></tr><tr><td><code>ai_distribution</code></td><td>OECD · valid weights · AI item 1–5</td><td>40,392</td><td>8</td></tr><tr><td><code>ai_models</code></td><td>OECD · valid weights · AI item 1–4 · science PVs · ESCS · immigrant status · ≥8 index items · valid Q02</td><td>36,015</td><td>8</td></tr><tr><td><code>ai_interaction</code></td><td>OECD · valid weights · valid chatbot item · AI item 1–4 · science PVs · ESCS · immigrant status</td><td>35,263</td><td>8</td></tr></tbody></table></div>
+<p>Iceland and Luxembourg release no school identifier, which is why the within-school sample covers 22 systems rather than 24. 25,758 records across the file carry no school identifier. Student keys are unique: 755,721 distinct country-and-student pairs, school identifiers uniformly 8 characters, 24,566 schools.</p>
+<h2 id="inference">Inference</h2>
+<p>The estimand is the equal-weight average of estimates computed separately inside each participating OECD system, which matches OECD's own definition of its average as the arithmetic mean of the respective country estimates. Every result row names its own contributing set; a restricted set is never called "the OECD average".</p>
+<p>For one country, with <code>M</code> plausible values and the full-sample estimate in replicate slot zero:</p>
+<ul><li>Sampling covariance: Fay with 80 replicates and <code>k = 0.5</code>, multiplier <code>0.05</code>, averaged over plausible values.</li><li>Imputation covariance: Rubin's <code>(1 + 1/M)</code> times the between-plausible-value covariance. Exactly zero when <code>M = 1</code>, which is the case for questionnaire proportions.</li><li>Total covariance is the sum of the two.</li></ul>
+<p>Independent country designs are then combined as <code>sum_c a_c² · cov_c</code>, with <code>a_c = 1/K</code> by default. This ordering matters and is the reason this release exists in its current form: plausible values are imputed <em>within</em> country, so pairing draw index <code>m</code> across countries is arbitrary. Averaging country estimates plausible-value-by-plausible-value and only then taking the between-draw variance makes the reported standard error depend on that arbitrary ordering. On a synthetic two-country example carrying identical information, reversing one country's plausible-value order moved the aggregate standard error from 4.615 to 4.263 under the earlier arithmetic. Under the corrected combiner it does not move at all. This is covered by a permutation test in the release test suite.</p>
+<p>Every statistic vector is multivariate, so contrasts and nested-model differences keep their covariance. Paired changes — raw minus adjusted, baseline minus within-school, one nested model minus the next — are computed inside the joint draws and carry their own interval, rather than being inferred from two separate standard errors.</p>
+<p>Intervals are <code>estimate ± 1.96 × SE</code> and are labelled approximate. They describe sampling and plausible-value uncertainty for the systems included. They do not describe a random draw from a universe of countries, and they are not corrected for the number of contrasts examined.</p>
+<p>Weighted least squares uses sampling weights multiplying squared residuals; the implementation is checked against an independent <code>numpy.linalg.lstsq</code> reference on the whitened design. Within-school fits subtract weighted school means from the outcome and every non-constant regressor, recomputed for every replicate because the weights change; the implementation is checked against an explicit-indicator fit under unequal weights and with string identifiers carrying leading zeros. Zero-weight schools contribute no weighted records in that replicate and are left unchanged rather than divided by zero.</p>
+<p>Weighted quantiles use the inverse weighted empirical CDF with no interpolation: for each probability, the smallest observed value whose cumulative weight share reaches it. Zero-weight records are dropped first. Ties share one cumulative step, so exact quarters are not guaranteed and realised weighted group sizes are reported in <code>ai_checks</code>. In practice they land within 0.03 percentage points of 25% in every system.</p>
+<h2 id="support-and-exclusion-rules">Support and exclusion rules</h2>
+<p>Fixed before estimation, in <code>specification.md</code>:</p>
+<ol><li>A system contributes to the primary screen model only if every one of the six exposure</li></ol>
+<p>categories has at least 30 records in its analytic sample. This is an analytic stability rule of this analysis, not an OECD rule. No system was excluded by it.</p>
+<ol><li>A rank-deficient weighted design raises an error carrying country, model and replicate.</li></ol>
+<p>The affected estimate would be published with <code>status = unsupported</code>, a reason and no number. It is never returned as zero or NaN. No fit failed.</p>
+<ol><li>Every group mean requires positive weight in every replicate, in every system of the</li></ol>
+<p>fixed country set. If any system fails, the fixed-set score mean is published as <code>unsupported</code> with a reason rather than recomputed on a smaller set — and the response shares, which are independent of score support, are reported for the full fixed set regardless. Score-mean rows carry their own counted <code>n_students</code> per response group; share rows carry the response denominator.</p>
+<ol><li>Sparse cells in the descriptive AI distribution are flagged with counts and kept</li></ol>
+<p>visible. The smallest cell was 37, so none was flagged.</p>
+<h2 id="sensitivities">Sensitivities</h2>
+<p>All in <code>screen_sensitivity.csv</code> and <code>ai_models.csv</code>.</p>
+<div class="table-scroll"><table><thead><tr><th>Code</th><th>What it does</th><th>Effect on the headline contrast</th></tr></thead><tbody><tr><td>S1</td><td>Excludes OECD systems carrying an applicable official PISA 2025 sampling caution (operatively the Netherlands, New Zealand and the United States; Canada and Norway do not contribute)</td><td>−58.6 against −59.1</td></tr><tr><td>S2</td><td>Excludes systems whose weighted valid share on the exposure item is below 60% of released records (United Kingdom, Israel, United States)</td><td>−60.5</td></tr><tr><td>S3</td><td>Leave-one-country-out, 24 runs</td><td>−58.0 to −60.6</td></tr><tr><td>S4</td><td>Adds a squared ESCS term on identical records</td><td>moves the contrast by 0.18</td></tr><tr><td>S5</td><td>Nested AI models on students answering all eleven index items</td><td>final coefficient 9.8 against 10.2</td></tr><tr><td>S6</td><td>Within-school fixed effects on the school-valid sample</td><td>−37.2 against a −58.8 baseline on the same records</td></tr></tbody></table></div>
+<p>The S2 threshold was chosen after reading the coverage table and before estimating any coefficient. Spain carries no caution flag: OECD's cautions apply to Catalonia and Murcia, not to the national entity, and a regional caution was deliberately not promoted to a national one.</p>
+<h2 id="checking-the-numbers">Checking the numbers</h2>
+<p>The analysis code is not public. Every aggregate table behind the article is, in the <a href="downloads/">data downloads</a>, and <code>claims.json</code> maps each number in the article to the generated result row it came from, so any figure here can be traced to its table without the 2 GB source file. Regenerating the tables themselves requires the PISA microdata, obtained from the OECD.</p>
+<h2 id="appendix-tables">Appendix tables</h2>
+<ul><li><code>screens.csv</code> — every category contrast, per system and aggregate, for all specifications and all three domains.</li><li><code>screen_sensitivity.csv</code> — S1, S2 and all 24 leave-one-out runs.</li><li><code>screen_school_diagnostics.csv</code> — schools, singleton schools, schools without exposure variation, and whether the within-school design has support, per system.</li><li><code>ai_distribution.csv</code> — the five response shares and their science means.</li><li><code>ai_models.csv</code> — the nested ladder, the complete-battery subset and the ESCS gradient.</li><li><code>ai_interaction.csv</code> — the four cell means and both interaction models.</li><li><code>coverage.csv</code>, <code>sample_flow.csv</code>, <code>selection_comparison.csv</code>, <code>variable_dictionary.csv</code> — populations and instruments.</li><li><code>cycle_verification.json</code>, <code>sampling_cautions.json</code>, <code>source_manifest.json</code> — provenance.</li><li><code>specification.md</code> — the frozen specification.</li><li><code>claims.json</code> — the ledger linking every published statement to its result row.</li></ul>
+<h2 id="excluded-from-this-release">Excluded from this release</h2>
+<p>Deliberately not published here, and not to be inferred from anything above: mixed-task process, attention or patience claims from the timing data; forecasts of any kind; migration and management arguments; school-policy effects; and decile heat maps built on averaged plausible values. The underlying investigations remain in the project's history for follow-up, but they do not meet the standard applied to this release.</p>
+</main>
+<footer class="site">
+<p>Dinis Mira · 20 September 2026 ·
+version 1.0.0</p>
+<p>Independent observational research. Not peer reviewed, and not an OECD publication.</p>
+<p>Cite as: Mira, D. (2026). Screens, AI Confidence and Student Achievement: What PISA 2025 Can - and Cannot - Tell Us. Version 1.0.0.</p>
+</footer>
+</div>
+</body>
+</html>

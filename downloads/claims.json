@@ -1,0 +1,686 @@
+{
+  "note": "Skeleton only. Estimates, intervals, samples and country sets are filled in from the generated result rows by `release.py analysis`, which writes release_results/claims.json. Nothing numeric is typed by hand here or in the article: the article writes {{claim_id}} and the build resolves it.",
+  "generated_from": "release_results result tables",
+  "claims": [
+    {
+      "claim_id": "screen_raw_over7",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f})",
+      "result_ids": [
+        "screens.main.unadjusted.6"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-1-screen-curve.png",
+      "interpretation_limit": "A raw within-country difference between groups of students who differ in many ways. Not an effect of screen time.",
+      "display_text": "74 points (95% CI 72 to 77)",
+      "table": "screens.csv",
+      "estimate": "-74.48830958221816",
+      "se": "1.5100840887534304",
+      "ci_low": "-77.44802000980188",
+      "ci_high": "-71.52859915463445",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_adjusted_over7",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f})",
+      "result_ids": [
+        "screens.main.adjusted.6"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-1-screen-curve.png",
+      "interpretation_limit": "Adjusted for ESCS and immigrant status only. Residual confounding, reverse direction and measurement error all remain.",
+      "display_text": "59 points (95% CI 56 to 62)",
+      "table": "screens.csv",
+      "estimate": "-59.09219116340201",
+      "se": "1.416836749160368",
+      "ci_low": "-61.86914016372914",
+      "ci_high": "-56.315242163074885",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_adjustment_change_over7",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "screens.main.change.unadjusted_to_adjusted.6"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-1-screen-curve.png",
+      "interpretation_limit": "A paired difference computed inside the joint draws, so it carries its own uncertainty rather than being read off two separate standard errors.",
+      "display_text": "15.4 points (95% CI 14.2 to 16.6)",
+      "table": "screens.csv",
+      "estimate": "15.396118418816151",
+      "se": "0.6325783017536988",
+      "ci_low": "14.156287729977391",
+      "ci_high": "16.635949107654913",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_adjusted_over5",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f})",
+      "result_ids": [
+        "screens.main.adjusted.5"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-1-screen-curve.png",
+      "interpretation_limit": "Same caveats as the over-7-hours contrast.",
+      "display_text": "42 points (95% CI 40 to 44)",
+      "table": "screens.csv",
+      "estimate": "-42.079607050797556",
+      "se": "1.0901814775756773",
+      "ci_low": "-44.216323483458545",
+      "ci_high": "-39.942890618136566",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_adjusted_under1",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "screens.main.adjusted.2"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-1-screen-curve.png",
+      "interpretation_limit": "This interval includes zero. That is an absence of clear evidence in this sample, not evidence of no difference.",
+      "display_text": "-0.1 points (95% CI -2.1 to 2.0)",
+      "table": "screens.csv",
+      "estimate": "-0.0818206857896564",
+      "se": "1.0446604252674792",
+      "ci_low": "-2.1293174953882126",
+      "ci_high": "1.9656761238088996",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_adjusted_none",
+      "display_template": "{abs_estimate:.1f} points (95% CI {abs_ci_high:.1f} to {abs_ci_low:.1f})",
+      "result_ids": [
+        "screens.main.adjusted.1"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-1-screen-curve.png",
+      "interpretation_limit": "Students reporting no social-network time at all also score below the 1-3 hour group. The curve is not monotonic.",
+      "display_text": "8.1 points (95% CI 4.6 to 11.5)",
+      "table": "screens.csv",
+      "estimate": "-8.060932321797441",
+      "se": "1.7534110141113093",
+      "ci_low": "-11.49755475955146",
+      "ci_high": "-4.624309884043423",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_countries",
+      "display_template": "{n_countries} OECD systems",
+      "result_ids": [
+        "screens.main.adjusted.6"
+      ],
+      "units": "education systems",
+      "figure": "figure-2-country-forest.png",
+      "interpretation_limit": "These are the systems that administered the item and met the category-support rule, not all OECD members.",
+      "display_text": "24 OECD systems",
+      "table": "screens.csv",
+      "estimate": "-59.09219116340201",
+      "se": "1.416836749160368",
+      "ci_low": "-61.86914016372914",
+      "ci_high": "-56.315242163074885",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_n",
+      "display_template": "{n_students:,.0f} students",
+      "result_ids": [
+        "screens.main.adjusted.6"
+      ],
+      "units": "students",
+      "figure": "figure-2-country-forest.png",
+      "interpretation_limit": "The analytic sample for this contrast, not the size of the public-use file.",
+      "display_text": "146,738 students",
+      "table": "screens.csv",
+      "estimate": "-59.09219116340201",
+      "se": "1.416836749160368",
+      "ci_low": "-61.86914016372914",
+      "ci_high": "-56.315242163074885",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_cautioned_over7",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f}) across {n_countries} systems",
+      "result_ids": [
+        "screens.S1_cautioned.adjusted.6"
+      ],
+      "units": "PISA science score points",
+      "figure": "",
+      "interpretation_limit": "Excludes systems carrying an applicable official PISA 2025 sampling caution.",
+      "display_text": "59 points (95% CI 56 to 61) across 21 systems",
+      "table": "screen_sensitivity.csv",
+      "estimate": "-58.564144359072586",
+      "se": "1.4584534174447858",
+      "ci_low": "-61.42266053039373",
+      "ci_high": "-55.705628187751444",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;POL;SVN;TUR",
+      "n_students": "136279",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "screen_coverage_over7",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f}) across {n_countries} systems",
+      "result_ids": [
+        "screens.S2_coverage.adjusted.6"
+      ],
+      "units": "PISA science score points",
+      "figure": "",
+      "interpretation_limit": "Excludes systems whose weighted valid share on the exposure item is below 60% of their released records.",
+      "display_text": "61 points (95% CI 58 to 63) across 21 systems",
+      "table": "screen_sensitivity.csv",
+      "estimate": "-60.540968945743984",
+      "se": "1.4491938771009945",
+      "ci_low": "-63.381336751477896",
+      "ci_high": "-57.70060114001007",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GRC;HUN;IRL;ISL;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR",
+      "n_students": "139266",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "school_baseline_over7",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f})",
+      "result_ids": [
+        "screens.within_school.between_and_within_schools.6"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-5-within-school.png",
+      "interpretation_limit": "The baseline fit on the school-valid sample, so it is comparable with the within-school fit on identical records.",
+      "display_text": "59 points (95% CI 56 to 62)",
+      "table": "screens.csv",
+      "estimate": "-58.779867424473",
+      "se": "1.4312881340464567",
+      "ci_low": "-61.58514061870359",
+      "ci_high": "-55.9745942302424",
+      "sample_id": "screens_school",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISR;ITA;JPN;KOR;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "139948",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "school_within_over7",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f})",
+      "result_ids": [
+        "screens.within_school.within_school_only.6"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-5-within-school.png",
+      "interpretation_limit": "Comparing students in the same school removes everything schools differ on, but selection into schools, peers, unmeasured traits and reverse direction all remain unresolved.",
+      "display_text": "37 points (95% CI 35 to 40)",
+      "table": "screens.csv",
+      "estimate": "-37.2284346082882",
+      "se": "1.3840970438683806",
+      "ci_low": "-39.94121496537858",
+      "ci_high": "-34.515654251197816",
+      "sample_id": "screens_school",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISR;ITA;JPN;KOR;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "139948",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "school_change_over7",
+      "display_template": "{estimate:.0f} points (95% CI {ci_low:.0f} to {ci_high:.0f})",
+      "result_ids": [
+        "screens.within_school.change.between_and_within_schools_to_within_school_only.6"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-5-within-school.png",
+      "interpretation_limit": "A paired difference from the joint draws. It measures how much of the contrast lies between schools, not a causal decomposition.",
+      "display_text": "22 points (95% CI 20 to 23)",
+      "table": "screens.csv",
+      "estimate": "21.5514328161848",
+      "se": "0.8120959775347595",
+      "ci_low": "19.959753948226822",
+      "ci_high": "23.143111684142777",
+      "sample_id": "screens_school",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISR;ITA;JPN;KOR;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "139948",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "school_countries",
+      "display_template": "{n_countries} systems and {n_students:,.0f} students",
+      "result_ids": [
+        "screens.within_school.within_school_only.6"
+      ],
+      "units": "systems and students",
+      "figure": "figure-5-within-school.png",
+      "interpretation_limit": "Two systems release no school identifier, so this sample is smaller than the main one.",
+      "display_text": "22 systems and 139,948 students",
+      "table": "screens.csv",
+      "estimate": "-37.2284346082882",
+      "se": "1.3840970438683806",
+      "ci_low": "-39.94121496537858",
+      "ci_high": "-34.515654251197816",
+      "sample_id": "screens_school",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISR;ITA;JPN;KOR;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "139948",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "reading_over7",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f})",
+      "result_ids": [
+        "screens.reading.adjusted.6"
+      ],
+      "units": "PISA reading score points",
+      "figure": "",
+      "interpretation_limit": "Reported alongside science on identical records. The difference between domain coefficients has not been tested and must not be read as one domain being more affected.",
+      "display_text": "54 points (95% CI 51 to 57)",
+      "table": "screens.csv",
+      "estimate": "-54.08565789046572",
+      "se": "1.4483811658331487",
+      "ci_low": "-56.924432811384825",
+      "ci_high": "-51.24688296954661",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "mathematics_over7",
+      "display_template": "{abs_estimate:.0f} points (95% CI {abs_ci_high:.0f} to {abs_ci_low:.0f})",
+      "result_ids": [
+        "screens.mathematics.adjusted.6"
+      ],
+      "units": "PISA mathematics score points",
+      "figure": "",
+      "interpretation_limit": "Same restriction as the reading contrast.",
+      "display_text": "59 points (95% CI 56 to 61)",
+      "table": "screens.csv",
+      "estimate": "-58.78111479903372",
+      "se": "1.3796920786539508",
+      "ci_low": "-61.48526158295067",
+      "ci_high": "-56.076968015116776",
+      "sample_id": "screens_main",
+      "country_set": "AUS;AUT;BEL;CHE;DEU;ESP;EST;FIN;GBR;GRC;HUN;IRL;ISL;ISR;ITA;JPN;KOR;LUX;NLD;NZL;POL;SVN;TUR;USA",
+      "n_students": "146738",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_dont_know_share",
+      "display_template": "{estimate:.1f}% (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.distribution.share.5"
+      ],
+      "units": "percent of students",
+      "figure": "figure-4-ai-responses.png",
+      "interpretation_limit": "A weighted country-first share. This group was dropped entirely from the earlier headline table.",
+      "display_text": "3.3% (95% CI 3.1 to 3.5)",
+      "table": "ai_distribution.csv",
+      "estimate": "3.3265346940772575",
+      "se": "0.1001812382008033",
+      "ci_low": "3.130183075277055",
+      "ci_high": "3.52288631287746",
+      "sample_id": "ai_distribution",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "40392",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_dont_know_score",
+      "display_template": "{estimate:.0f} (95% CI {ci_low:.0f} to {ci_high:.0f})",
+      "result_ids": [
+        "ai.distribution.science_mean.5"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-4-ai-responses.png",
+      "interpretation_limit": "A descriptive group mean, unadjusted for anything.",
+      "display_text": "463 (95% CI 454 to 472)",
+      "table": "ai_distribution.csv",
+      "estimate": "462.78902447548256",
+      "se": "4.44733130436401",
+      "ci_low": "454.07241529161155",
+      "ci_high": "471.5056336593536",
+      "sample_id": "ai_distribution",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "1480",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_cannot_score",
+      "display_template": "{estimate:.0f} (95% CI {ci_low:.0f} to {ci_high:.0f})",
+      "result_ids": [
+        "ai.distribution.science_mean.1"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-4-ai-responses.png",
+      "interpretation_limit": "A descriptive group mean, unadjusted for anything.",
+      "display_text": "478 (95% CI 475 to 481)",
+      "table": "ai_distribution.csv",
+      "estimate": "477.8679203055365",
+      "se": "1.716193098474662",
+      "ci_low": "474.50424364200995",
+      "ci_high": "481.231596969063",
+      "sample_id": "ai_distribution",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "8007",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_easily_share",
+      "display_template": "{estimate:.1f}% (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.distribution.share.4"
+      ],
+      "units": "percent of students",
+      "figure": "figure-4-ai-responses.png",
+      "interpretation_limit": "Self-report of ability, not a measured ability.",
+      "display_text": "31.6% (95% CI 31.1 to 32.2)",
+      "table": "ai_distribution.csv",
+      "estimate": "31.648938743790684",
+      "se": "0.28743954534352245",
+      "ci_low": "31.085567587184812",
+      "ci_high": "32.212309900396555",
+      "sample_id": "ai_distribution",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "40392",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_raw_gap",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.nested_models.1"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-3-ai-nested-models.png",
+      "interpretation_limit": "The unadjusted gap between students who say they can assess AI output and those who say they cannot.",
+      "display_text": "24.7 points (95% CI 22.0 to 27.4)",
+      "table": "ai_models.csv",
+      "estimate": "24.67838903934474",
+      "se": "1.3641425446455564",
+      "ci_low": "22.00471878206063",
+      "ci_high": "27.352059296628852",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_escs_change",
+      "display_template": "{abs_estimate:.1f} points (95% CI {abs_ci_high:.1f} to {abs_ci_low:.1f})",
+      "result_ids": [
+        "ai.nested_models.change.1"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-3-ai-nested-models.png",
+      "interpretation_limit": "How much the gap moves when ESCS enters, computed inside the joint draws. Not a causal decomposition.",
+      "display_text": "16.8 points (95% CI 15.6 to 18.0)",
+      "table": "ai_models.csv",
+      "estimate": "-16.844355632708908",
+      "se": "0.6124072405713359",
+      "ci_low": "-18.044651768100284",
+      "ci_high": "-15.644059497317533",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_after_escs_gap",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.nested_models.2"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-3-ai-nested-models.png",
+      "interpretation_limit": "The gap after ESCS alone enters the nested ladder. A conditional association, not an amount family background 'explains'.",
+      "display_text": "7.8 points (95% CI 5.3 to 10.3)",
+      "table": "ai_models.csv",
+      "estimate": "7.834033406635832",
+      "se": "1.270708140864248",
+      "ci_low": "5.343491215680057",
+      "ci_high": "10.324575597591608",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_final_gap",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.nested_models.5"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-3-ai-nested-models.png",
+      "interpretation_limit": "What remains after ESCS, immigrant status, general digital confidence and the non-AI twin item. Still an association.",
+      "display_text": "10.2 points (95% CI 7.2 to 13.2)",
+      "table": "ai_models.csv",
+      "estimate": "10.219445129442226",
+      "se": "1.5234110896375916",
+      "ci_low": "7.233614260103627",
+      "ci_high": "13.205275998780825",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_general_change",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.nested_models.change.3"
+      ],
+      "units": "PISA science score points",
+      "figure": "figure-3-ai-nested-models.png",
+      "interpretation_limit": "Adding the general digital-confidence index moves the AI coefficient upward, not downward. This is a suppression pattern in an exploratory index, not a validated finding about AI literacy.",
+      "display_text": "3.0 points (95% CI 1.5 to 4.6)",
+      "table": "ai_models.csv",
+      "estimate": "3.039081728934396",
+      "se": "0.8033663408673144",
+      "ci_low": "1.464512634442731",
+      "ci_high": "4.6136508234260605",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_battery_final_gap",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.S5_complete_battery.5"
+      ],
+      "units": "PISA science score points",
+      "figure": "",
+      "interpretation_limit": "The same ladder on students answering all eleven index items, which separates sample restriction from adjustment.",
+      "display_text": "9.8 points (95% CI 6.6 to 13.0)",
+      "table": "ai_models.csv",
+      "estimate": "9.841153701706679",
+      "se": "1.629396135540531",
+      "ci_low": "6.647595959498494",
+      "ci_high": "13.034711443914864",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "32567",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_countries",
+      "display_template": "{n_countries} OECD systems",
+      "result_ids": [
+        "ai.nested_models.1"
+      ],
+      "units": "education systems",
+      "figure": "figure-3-ai-nested-models.png",
+      "interpretation_limit": "The AI battery ran in a small number of systems. Nothing here is an OECD-wide finding.",
+      "display_text": "8 OECD systems",
+      "table": "ai_models.csv",
+      "estimate": "24.67838903934474",
+      "se": "1.3641425446455564",
+      "ci_low": "22.00471878206063",
+      "ci_high": "27.352059296628852",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_n",
+      "display_template": "{n_students:,.0f} students",
+      "result_ids": [
+        "ai.nested_models.1"
+      ],
+      "units": "students",
+      "figure": "",
+      "interpretation_limit": "The analytic sample for the nested models.",
+      "display_text": "36,015 students",
+      "table": "ai_models.csv",
+      "estimate": "24.67838903934474",
+      "se": "1.3641425446455564",
+      "ci_low": "22.00471878206063",
+      "ci_high": "27.352059296628852",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_escs_q1",
+      "display_template": "{estimate:.0f}% (95% CI {ci_low:.0f} to {ci_high:.0f})",
+      "result_ids": [
+        "ai.escs_gradient.0"
+      ],
+      "units": "percent of students",
+      "figure": "",
+      "interpretation_limit": "Lowest weighted ESCS quartile within country. ESCS is economic, social and cultural status, not household income.",
+      "display_text": "49% (95% CI 47 to 50)",
+      "table": "ai_models.csv",
+      "estimate": "48.58802616073814",
+      "se": "0.6377411257974344",
+      "ci_low": "47.33807652271514",
+      "ci_high": "49.837975798761136",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_escs_q4",
+      "display_template": "{estimate:.0f}% (95% CI {ci_low:.0f} to {ci_high:.0f})",
+      "result_ids": [
+        "ai.escs_gradient.1"
+      ],
+      "units": "percent of students",
+      "figure": "",
+      "interpretation_limit": "Highest weighted ESCS quartile within country.",
+      "display_text": "77% (95% CI 76 to 78)",
+      "table": "ai_models.csv",
+      "estimate": "76.79499323006547",
+      "se": "0.4958344796589651",
+      "ci_low": "75.82317550764074",
+      "ci_high": "77.7668109524902",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_escs_gap",
+      "display_template": "{estimate:.0f} percentage points (95% CI {ci_low:.0f} to {ci_high:.0f})",
+      "result_ids": [
+        "ai.escs_gradient.2"
+      ],
+      "units": "percentage points",
+      "figure": "",
+      "interpretation_limit": "A gap in self-rated confidence, not in measured skill.",
+      "display_text": "28 percentage points (95% CI 27 to 30)",
+      "table": "ai_models.csv",
+      "estimate": "28.206967069327344",
+      "se": "0.7826184326288811",
+      "ci_low": "26.67306312773755",
+      "ci_high": "29.74087101091714",
+      "sample_id": "ai_models",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "36015",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_interaction",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.interaction.7"
+      ],
+      "units": "PISA science score points",
+      "figure": "",
+      "interpretation_limit": "The interval includes zero, so there is no clear evidence of a difference in this sample. This is not evidence that no difference exists.",
+      "display_text": "-2.4 points (95% CI -7.5 to 2.7)",
+      "table": "ai_interaction.csv",
+      "estimate": "-2.3925002087737406",
+      "se": "2.620170955108988",
+      "ci_low": "-7.5279409141252716",
+      "ci_high": "2.7429404965777904",
+      "sample_id": "ai_interaction",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "35263",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_interaction_adjusted",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.interaction.11"
+      ],
+      "units": "PISA science score points",
+      "figure": "",
+      "interpretation_limit": "Background-adjusted interaction on the same records. Also includes zero.",
+      "display_text": "-1.5 points (95% CI -6.2 to 3.2)",
+      "table": "ai_interaction.csv",
+      "estimate": "-1.4751627747339224",
+      "se": "2.393133747210899",
+      "ci_low": "-6.165618729454667",
+      "ci_high": "3.215293179986822",
+      "sample_id": "ai_interaction",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "35263",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    },
+    {
+      "claim_id": "ai_weekly_lower_confidence",
+      "display_template": "{estimate:.1f} points (95% CI {ci_low:.1f} to {ci_high:.1f})",
+      "result_ids": [
+        "ai.interaction.5"
+      ],
+      "units": "PISA science score points",
+      "figure": "",
+      "interpretation_limit": "An association between reported weekly chatbot use and score among lower-confidence students. It is never points gained from using a chatbot.",
+      "display_text": "8.7 points (95% CI 4.3 to 13.1)",
+      "table": "ai_interaction.csv",
+      "estimate": "8.723731287192027",
+      "se": "2.2327623820244926",
+      "ci_low": "4.34759743238816",
+      "ci_high": "13.099865141995895",
+      "sample_id": "ai_interaction",
+      "country_set": "BEL;COL;DEU;IRL;ITA;KOR;LUX;PRT",
+      "n_students": "35263",
+      "estimand": "equal-weight average across the contributing OECD systems"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "dataset": "PISA public-use student questionnaire file",
+  "filename": "CY09_MS_STU_PUF.sav",
+  "sha256": "6f6fa1e1ecce23d39183d44ec82ba05b245fe88a2416c8d8dc1b016d556fc379",
+  "size_bytes": 2168666883,
+  "sav_creation_time": "2026-08-18 16:26:26",
+  "sav_modification_time": "2026-08-18 16:26:26",
+  "file_encoding": "UTF-8",
+  "rows": 755721,
+  "columns": 885,
+  "plausible_values_per_domain": {
+    "SCIE": 10,
+    "READ": 10,
+    "MATH": 10
+  },
+  "replicate_weights": 80,
+  "declared_user_missing_ranges": 0,
+  "retrieval_date": "unknown",
+  "retrieval_url": "unknown",
+  "note_on_dates": "Filesystem modification time is not a download date and is not recorded as one. sav_creation_time is the value the producer wrote into the file.",
+  "cycle_verification": "see release_results/cycle_verification.json"
+}

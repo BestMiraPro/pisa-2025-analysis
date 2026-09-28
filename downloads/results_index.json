@@ -1,0 +1,165 @@
+{
+  "result_tables": [
+    "screens.csv",
+    "screen_sensitivity.csv",
+    "ai_distribution.csv",
+    "ai_models.csv",
+    "ai_interaction.csv"
+  ],
+  "samples": {
+    "ai_distribution": {
+      "countries": [
+        "BEL",
+        "COL",
+        "DEU",
+        "IRL",
+        "ITA",
+        "KOR",
+        "LUX",
+        "PRT"
+      ],
+      "n_students": 40392
+    },
+    "ai_interaction": {
+      "countries": [
+        "BEL",
+        "COL",
+        "DEU",
+        "IRL",
+        "ITA",
+        "KOR",
+        "LUX",
+        "PRT"
+      ],
+      "n_students": 35263
+    },
+    "ai_models": {
+      "countries": [
+        "BEL",
+        "COL",
+        "DEU",
+        "IRL",
+        "ITA",
+        "KOR",
+        "LUX",
+        "PRT"
+      ],
+      "n_students": 36015
+    },
+    "disengagement": {
+      "countries": [
+        "AUS",
+        "AUT",
+        "BEL",
+        "CHE",
+        "DEU",
+        "ESP",
+        "EST",
+        "FIN",
+        "GBR",
+        "GRC",
+        "HUN",
+        "IRL",
+        "ISL",
+        "ISR",
+        "ITA",
+        "JPN",
+        "KOR",
+        "LUX",
+        "NLD",
+        "NZL",
+        "POL",
+        "SVN",
+        "TUR",
+        "USA"
+      ],
+      "n_students": 145246
+    },
+    "screens_gender": {
+      "countries": [
+        "AUT",
+        "CHE",
+        "EST",
+        "FIN",
+        "GBR",
+        "GRC",
+        "HUN",
+        "ISR",
+        "ITA",
+        "JPN",
+        "KOR",
+        "LUX",
+        "POL",
+        "SVN",
+        "TUR",
+        "USA"
+      ],
+      "n_students": 84364
+    },
+    "screens_main": {
+      "countries": [
+        "AUS",
+        "AUT",
+        "BEL",
+        "CHE",
+        "DEU",
+        "ESP",
+        "EST",
+        "FIN",
+        "GBR",
+        "GRC",
+        "HUN",
+        "IRL",
+        "ISL",
+        "ISR",
+        "ITA",
+        "JPN",
+        "KOR",
+        "LUX",
+        "NLD",
+        "NZL",
+        "POL",
+        "SVN",
+        "TUR",
+        "USA"
+      ],
+      "n_students": 146738
+    },
+    "screens_school": {
+      "countries": [
+        "AUS",
+        "AUT",
+        "BEL",
+        "CHE",
+        "DEU",
+        "ESP",
+        "EST",
+        "FIN",
+        "GBR",
+        "GRC",
+        "HUN",
+        "IRL",
+        "ISR",
+        "ITA",
+        "JPN",
+        "KOR",
+        "NLD",
+        "NZL",
+        "POL",
+        "SVN",
+        "TUR",
+        "USA"
+      ],
+      "n_students": 139948
+    }
+  },
+  "source_sha256": "6f6fa1e1ecce23d39183d44ec82ba05b245fe88a2416c8d8dc1b016d556fc379",
+  "support_tables": [
+    "coverage.csv",
+    "sample_flow.csv",
+    "selection_comparison.csv",
+    "variable_dictionary.csv",
+    "screen_school_diagnostics.csv",
+    "official_benchmark.csv"
+  ]
+}

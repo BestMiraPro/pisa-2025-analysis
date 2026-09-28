@@ -1,0 +1,59 @@
+{
+  "verified_on": "2026-09-20",
+  "verified_by": "direct inspection of the OECD website in this session",
+  "cycle": "PISA 2025",
+  "official_database_page": "https://www.oecd.org/en/data/datasets/pisa-2025-database.html",
+  "official_database_page_confirms": [
+    "A PISA 2025 Database page exists and offers Public Use Files (PUFs) in SAS and SPSS formats.",
+    "Codebook published at https://webfs.oecd.org/pisa2022/2025/PISA2025_Codebook.xlsx",
+    "Volume I variable recoding syntax at https://webfs.oecd.org/pisa2022/2025/PISA_recoding_2025.zip",
+    "Master student and ICT familiarity questionnaires published as separate PDFs.",
+    "PUF download is gated behind an OECD registration form at survey.oecd.org; the microdata is not a direct public download."
+  ],
+  "results_volume": {
+    "title": "PISA 2025 Results (Volume I): Future-Ready Students",
+    "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html",
+    "publication_date_shown_on_page": "8 September 2026",
+    "coverage_stated": "91 countries and economies, including all OECD member countries and 53 non-OECD members and economies"
+  },
+  "local_file_identity": {
+    "filename": "CY09_MS_STU_PUF.sav",
+    "sha256": "6f6fa1e1ecce23d39183d44ec82ba05b245fe88a2416c8d8dc1b016d556fc379",
+    "size_bytes": 2168666883,
+    "sav_creation_time": "2026-08-18 16:26:26",
+    "evidence_it_is_the_PISA_2025_student_PUF": [
+      "Filename follows the OECD PUF naming scheme; CY09 is the ninth PISA cycle, and the 2022 file in the same data directory is CY08MSP_STU_QQQ.SAV.",
+      "The local data directory also holds PISA2025_Codebook.xlsx and PISA_recoding_2025.zip, matching the exact filenames published on the PISA 2025 Database page.",
+      "Item wording in the file matches the PISA 2025 instruments: IC177Q02JA is the ICT-familiarity weekday leisure item, ST438Q04DA the AI-chatbot school-work item, PA205Q01-13DA the digital-resources self-efficacy battery.",
+      "The file carries 10 plausible values for each of SCIE, READ and MATH, and 80 Fay replicate weights, as expected for a PISA cycle."
+    ],
+    "not_established": [
+      "The retrieval URL and download date could not be recovered. Filesystem modification time is not a download date and has not been recorded as one.",
+      "A byte-level comparison against the OECD-hosted file was not performed: the PUF is served behind a registration form, and the codebook host blocks cross-origin reads."
+    ],
+    "residual_risk": "RESOLVED. The official benchmark in release_results/official_benchmark.csv reproduces OECD's own published table for this exact item - compendium pisa2025_ms_bkg_ict_scie_compendium.xlsx, sheet IC177Q02JA - for all 144 published country-by-category cells across 24 systems, matching both the mean AND the standard error within 0.005, which is half of the last published decimal. Largest absolute deviation 0.004975 on the mean and 0.004995 on the SE, i.e. rounding. This confirms the file is the PISA 2025 student public-use file and that the weighting, plausible-value and Fay-BRR handling here match the published methodology."
+  },
+  "file_versus_publication_coverage": {
+    "records_in_public_use_file": 755721,
+    "systems_in_public_use_file": 90,
+    "systems_in_volume_I": 91,
+    "note": "The public-use file releases 90 systems; Volume I reports 91 countries and economies. The difference is stated as an observed fact. No explanation is asserted here, because none was established from the official documentation consulted."
+  },
+  "official_average_definition": {
+    "quoted_from": "PISA 2025 Results (Volume I), Reader's Guide, 'International averages'",
+    "substance": "OECD states its average is the arithmetic mean of the respective country estimates, and warns that it refers only to the OECD member countries included in the respective comparison and is not necessarily computed on a consistent country set across columns.",
+    "implication": "The equal-weight-across-countries estimand used in this release matches OECD's own construction, but every figure here names its own contributing country set rather than calling a restricted set 'the OECD average'."
+  },
+  "official_benchmark": {
+    "source": "data/Compendia_PISA2025_QQQ.zip -> BKG/pisa2025_ms_bkg_ict_scie_compendium.xlsx",
+    "sheet": "IC177Q02JA",
+    "published_to": "two decimals",
+    "cells_compared": 144,
+    "systems": 24,
+    "means_matching": 144,
+    "standard_errors_matching": 144,
+    "tolerance": "0.005 plus floating-point slack, i.e. half the last published digit",
+    "max_abs_mean_difference": 0.004975,
+    "max_abs_se_difference": 0.004995
+  }
+}
