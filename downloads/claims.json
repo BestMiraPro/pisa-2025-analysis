@@ -91,7 +91,7 @@
       "units": "PISA science score points",
       "figure": "figure-1-screen-curve.png",
       "interpretation_limit": "This interval includes zero. That is an absence of clear evidence in this sample, not evidence of no difference.",
-      "display_text": "-0.1 points (95% CI -2.1 to 2.0)",
+      "display_text": "\u22120.1 points (95% CI \u22122.1 to 2.0)",
       "table": "screens.csv",
       "estimate": "-0.0818206857896564",
       "se": "1.0446604252674792",
@@ -209,7 +209,7 @@
         "screens.within_school.between_and_within_schools.6"
       ],
       "units": "PISA science score points",
-      "figure": "figure-5-within-school.png",
+      "figure": "figure-3-within-school.png",
       "interpretation_limit": "The baseline fit on the school-valid sample, so it is comparable with the within-school fit on identical records.",
       "display_text": "59 points (95% CI 56 to 62)",
       "table": "screens.csv",
@@ -229,7 +229,7 @@
         "screens.within_school.within_school_only.6"
       ],
       "units": "PISA science score points",
-      "figure": "figure-5-within-school.png",
+      "figure": "figure-3-within-school.png",
       "interpretation_limit": "Comparing students in the same school removes everything schools differ on, but selection into schools, peers, unmeasured traits and reverse direction all remain unresolved.",
       "display_text": "37 points (95% CI 35 to 40)",
       "table": "screens.csv",
@@ -249,7 +249,7 @@
         "screens.within_school.change.between_and_within_schools_to_within_school_only.6"
       ],
       "units": "PISA science score points",
-      "figure": "figure-5-within-school.png",
+      "figure": "figure-3-within-school.png",
       "interpretation_limit": "A paired difference from the joint draws. It measures how much of the contrast lies between schools, not a causal decomposition.",
       "display_text": "22 points (95% CI 20 to 23)",
       "table": "screens.csv",
@@ -269,7 +269,7 @@
         "screens.within_school.within_school_only.6"
       ],
       "units": "systems and students",
-      "figure": "figure-5-within-school.png",
+      "figure": "figure-3-within-school.png",
       "interpretation_limit": "Two systems release no school identifier, so this sample is smaller than the main one.",
       "display_text": "22 systems and 139,948 students",
       "table": "screens.csv",
@@ -409,7 +409,7 @@
         "ai.nested_models.1"
       ],
       "units": "PISA science score points",
-      "figure": "figure-3-ai-nested-models.png",
+      "figure": "figure-5-ai-nested-models.png",
       "interpretation_limit": "The unadjusted gap between students who say they can assess AI output and those who say they cannot.",
       "display_text": "24.7 points (95% CI 22.0 to 27.4)",
       "table": "ai_models.csv",
@@ -429,7 +429,7 @@
         "ai.nested_models.change.1"
       ],
       "units": "PISA science score points",
-      "figure": "figure-3-ai-nested-models.png",
+      "figure": "figure-5-ai-nested-models.png",
       "interpretation_limit": "How much the gap moves when ESCS enters, computed inside the joint draws. Not a causal decomposition.",
       "display_text": "16.8 points (95% CI 15.6 to 18.0)",
       "table": "ai_models.csv",
@@ -449,7 +449,7 @@
         "ai.nested_models.2"
       ],
       "units": "PISA science score points",
-      "figure": "figure-3-ai-nested-models.png",
+      "figure": "figure-5-ai-nested-models.png",
       "interpretation_limit": "The gap after ESCS alone enters the nested ladder. A conditional association, not an amount family background 'explains'.",
       "display_text": "7.8 points (95% CI 5.3 to 10.3)",
       "table": "ai_models.csv",
@@ -469,7 +469,7 @@
         "ai.nested_models.5"
       ],
       "units": "PISA science score points",
-      "figure": "figure-3-ai-nested-models.png",
+      "figure": "figure-5-ai-nested-models.png",
       "interpretation_limit": "What remains after ESCS, immigrant status, general digital confidence and the non-AI twin item. Still an association.",
       "display_text": "10.2 points (95% CI 7.2 to 13.2)",
       "table": "ai_models.csv",
@@ -489,7 +489,7 @@
         "ai.nested_models.change.3"
       ],
       "units": "PISA science score points",
-      "figure": "figure-3-ai-nested-models.png",
+      "figure": "figure-5-ai-nested-models.png",
       "interpretation_limit": "Adding the general digital-confidence index moves the AI coefficient upward, not downward. This is a suppression pattern in an exploratory index, not a validated finding about AI literacy.",
       "display_text": "3.0 points (95% CI 1.5 to 4.6)",
       "table": "ai_models.csv",
@@ -529,7 +529,7 @@
         "ai.nested_models.1"
       ],
       "units": "education systems",
-      "figure": "figure-3-ai-nested-models.png",
+      "figure": "figure-5-ai-nested-models.png",
       "interpretation_limit": "The AI battery ran in a small number of systems. Nothing here is an OECD-wide finding.",
       "display_text": "8 OECD systems",
       "table": "ai_models.csv",
@@ -631,7 +631,7 @@
       "units": "PISA science score points",
       "figure": "",
       "interpretation_limit": "The interval includes zero, so there is no clear evidence of a difference in this sample. This is not evidence that no difference exists.",
-      "display_text": "-2.4 points (95% CI -7.5 to 2.7)",
+      "display_text": "\u22122.4 points (95% CI \u22127.5 to 2.7)",
       "table": "ai_interaction.csv",
       "estimate": "-2.3925002087737406",
       "se": "2.620170955108988",
@@ -651,7 +651,7 @@
       "units": "PISA science score points",
       "figure": "",
       "interpretation_limit": "Background-adjusted interaction on the same records. Also includes zero.",
-      "display_text": "-1.5 points (95% CI -6.2 to 3.2)",
+      "display_text": "\u22121.5 points (95% CI \u22126.2 to 3.2)",
       "table": "ai_interaction.csv",
       "estimate": "-1.4751627747339224",
       "se": "2.393133747210899",
